@@ -1,0 +1,34 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Que bom que vc veio",
+      "autoria": "pedro",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Amor a Deus",
+      "autoria": "Dev alura",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Totus tutus Mariae",
+      "autoria": "pedro",
+      "modelo": "modelo3"
+    },
+    {
+      "conteudo": "Meu love grande por ti",
+      "autoria": "Pedro Lucas",
+      "modelo": "modelo1",
+      "id": 4
+    },
+    {
+      "conteudo": "Aprendendo Angular",
+      "autoria": "Dev",
+      "modelo": "modelo1",
+      "id": 5
+    }
+  ]
+}
