@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Pensamento } from '../pensamento/pensamento';
+import { PensamentoService } from '../pensamento.service';
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -6,21 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar-pensamento.component.css']
 })
 export class ListarPensamentoComponent implements OnInit {
-  listaPensamentos = [
-    {
-        conteudo: 'I Love Angular muteka',
-        autoria: 'Pedro',
-        modelo: 'modelo3'
-    },
-    {
-      conteudo: 'I Love muteka ddkdkkdddddddddd kkfkfkkfkff kdkdkdkdkkdkdk kkdkdkdkdkdkkd kkdkdkdkdkkdkdkdk kdkdkdkdkkdkdkdkdk k kdkdkdkdkdkdk kkvdkdkdkdkdkdk kdkdkkdkddkdkkdkdkd kdkdkdkdkkdkdkddk kdkdkdkdkkdkdk kdkdkdkdkdkdkkdkdkdk kdkdkdksksisjksjskjjkjkkj jk jkkjdjkdjkdjkkkkkkkkkkkkkkkk  jkjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk jkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk jkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkj fjfjfjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv djjjjjjjjjjjjjjjjjjjjj',
-      autoria: 'Pedro muteka',
-      modelo: 'modelo2'
-    }
-  ]
-  constructor() { }
-
+  listaPensamentos: Pensamento[] = []
+  constructor(private service: PensamentoService) { }
   ngOnInit(): void {
+    this.service.listar().subscribe((listaPensamentos) => {
+      this.listaPensamentos = listaPensamentos
+    })
   }
 
 }
