@@ -23,12 +23,6 @@
       "autoria": "Pedro Lucas",
       "modelo": "modelo1",
       "id": 4
-    },
-    {
-      "conteudo": "Aprendendo Angular",
-      "autoria": "Dev",
-      "modelo": "modelo1",
-      "id": 5
     }
   ]
 }
