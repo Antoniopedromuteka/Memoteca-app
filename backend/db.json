@@ -2,9 +2,9 @@
   "pensamentos": [
     {
       "id": 1,
-      "conteudo": "Que bom que vc veio",
-      "autoria": "pedro",
-      "modelo": "modelo1"
+      "conteudo": "Que bom que vc veio aqui",
+      "autoria": "pedro Muteka",
+      "modelo": "modelo2"
     },
     {
       "id": 2,
@@ -23,12 +23,6 @@
       "autoria": "Pedro Lucas",
       "modelo": "modelo1",
       "id": 4
-    },
-    {
-      "conteudo": "Aprendendo Angular",
-      "autoria": "Dev",
-      "modelo": "modelo1",
-      "id": 5
     }
   ]
 }
