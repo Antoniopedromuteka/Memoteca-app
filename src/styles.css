@@ -74,4 +74,16 @@ h2 {
 }
 
 
+.botao__desabilitado {
+  background: #7a7f87;
+  color: #fff;
+  max-width: 270px;
+  width: 250px;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 2px solid #c4c4c4;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
 
