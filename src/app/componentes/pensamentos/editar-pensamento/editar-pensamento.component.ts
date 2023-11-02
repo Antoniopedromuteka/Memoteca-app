@@ -32,6 +32,7 @@ export class EditarPensamentoComponent implements OnInit {
         ],)],
         modelo: [pensamento.modelo],
         id: pensamento.id,
+        favorito: [pensamento.favorito]
     })})
   }
 
